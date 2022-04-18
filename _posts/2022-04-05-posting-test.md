@@ -10,4 +10,5 @@ tags: [test]     # TAG names should always be lowercase
 ### 참고링크
 ---
 [Jekyll Chirpy 테마](https://github.com/cotes2020/jekyll-theme-chirpy)  
-
+[GitHub Blog 만들기](https://wlqmffl0102.github.io/posts/Making-Git-blogs-for-beginners-3/)  
+[Chirpy 에러 해결](https://blog.kimzinu.com/posts/jekyll-4/)
