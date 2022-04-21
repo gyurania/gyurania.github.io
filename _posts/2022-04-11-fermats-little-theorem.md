@@ -1,5 +1,5 @@
 ---
-title: 페르마의 소정리(Fermat's little theorem)
+title: [CT] 페르마의 소정리(Fermat's little theorem)
 date: 2022-04-11 19:10:30 +09:00
 categories: [Algorithm, CT]
 tags: [algorithm, ct, fermat, 

@@ -1,5 +1,5 @@
 ---
-title: 프레임워크와 라이브러리의 차이
+title: [Spring] 프레임워크와 라이브러리의 차이
 date: 2022-04-19 20:00:30 +09:00
 categories: [Framework, Spring]
 tags: [framework, library, spring]
