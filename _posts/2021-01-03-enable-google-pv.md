@@ -33,7 +33,7 @@ With your property created, you now need to set up Data Stream to track your blo
 
 It should look like this:
 
-![google-analytics-data-stream](/posts/20210103/01-google-analytics-data-stream.png){: width="1086" height="542"}
+![google-analytics-data-stream](/assets/img/blogging/01-google-analytics-data-stream.png){: width="1086" height="542"}
 
 Now, click on the new data stream and grab the **Measurement ID**. It should look something like `G-V6XXXXXXXX`. Copy this to your `_config.yml`{: .filepath} file:
 
@@ -49,7 +49,7 @@ google_analytics:
 
 When you push these changes to your blog, you should start seeing the traffic on your Google Analytics. Play around with the Google Analytics dashboard to get familiar with the options available as it takes like 5 mins to pick up your changes. You should now be able to monitor your traffic in real time.
 
-![google-analytics-realtime](/posts/20210103/02-google-analytics-realtime.png){: width="616" height="557"}
+![google-analytics-realtime](/assets/img/blogging/02-google-analytics-realtime.png){: width="616" height="557"}
 
 ## Setup Page Views
 
