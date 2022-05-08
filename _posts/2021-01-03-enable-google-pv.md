@@ -188,7 +188,7 @@ There is a detailed [tutorial](https://developers.google.com/analytics/solutions
 
 If everything went good, you'll get this screen:
 
-![superProxy-deployed](/posts/20210103/03-superProxy-deployed.png){: width="1366" height="354"}
+![superProxy-deployed](/assets/img/blogging/03-superProxy-deployed.png){: width="1366" height="354"}
 
 ### Create Google Analytics Query
 
@@ -213,13 +213,13 @@ After <kbd>Run Query</kbd>, copy the generated contents of **API Query URI** at 
 
 After the query is saved on GAE, a **Public Endpoint** (public access address) will be generated, and we will get the query result in JSON format when accessing it. Finally, click <kbd>Enable Endpoint</kbd> in **Public Request Endpoint** to make the query effective, and click <kbd>Start Scheduling</kbd> in **Scheduling** to start the scheduled task.
 
-![superproxy-query](/posts/20210103/04-superproxy-query.png){: width="1100" height="126"}
+![superproxy-query](/assets/img/blogging/04-superproxy-query.png){: width="1100" height="126"}
 
 ## Configure Chirpy to Display Page View
 
 Once all the hard part is done, it is very easy to enable the Page View on Chirpy theme. Your superProxy dashboard should look something like below and you can grab the required values.
 
-![superproxy-dashboard](/posts/20210103/05-superproxy-dashboard.png){: width="1210" height="694"}
+![superproxy-dashboard](/assets/img/blogging/05-superproxy-dashboard.png){: width="1210" height="694"}
 
 Update the `_config.yml`{: .filepath} file of [**Chirpy**][chirpy-homepage] project with the values from your dashboard, to look similar to the following:
 
