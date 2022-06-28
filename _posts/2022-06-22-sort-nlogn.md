@@ -1,7 +1,7 @@
 ---
 title: "[Sort] 정렬 알고리즘(nlogn)"
 date: 2022-06-22 01:40:00 +09:00
-categories: [Algorithms]
+categories: [Algorithm, Sort]
 tags: [sort, heap, merge, quick]
 mermaid: true
 use_math: true
