@@ -5,8 +5,6 @@ categories: [Framework, Spring]
 tags: [framework, library, spring]
 ---
 
-## Framework and Library
-
 ### 프레임워크란?
 
 프레임워크는 뼈대, 기반구조를 의미합니다.  

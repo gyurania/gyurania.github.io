@@ -1,8 +1,8 @@
 ---
 title: 첫 포스팅 테스트
 date: 2022-04-05 22:10:30 +09:00
-categories: [Git, Blog]
-tags: [test] # TAG names should always be lowercase
+categories: [Blog]
+tags: [blog, test] # TAG names should always be lowercase
 ---
 
 개인 공부 기록 목적으로 블로그를 개설합니다. <br><br>

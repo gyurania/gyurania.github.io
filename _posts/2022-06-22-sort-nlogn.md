@@ -319,3 +319,11 @@ public class QuickSort {
     }
 }
 ```
+
+---
+
+### 참고링크
+
+[합병 정렬(merge sort)이란](https://gmlwjd9405.github.io/2018/05/08/algorithm-merge-sort.html){:target="\_blank"}  
+[힙 정렬(heap sort)이란](https://gmlwjd9405.github.io/2018/05/10/algorithm-heap-sort.html){:target="\_blank"}  
+[퀵 정렬(quick sort)이란](https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html){:target="\_blank"}
