@@ -1,8 +1,18 @@
 ---
-title: "[OS] Thread"
+title: "[OS] Process와 Thread"
 date: 2022-06-25 10:00:00 +09:00
 categories: [Computer Science, OS]
-tags: [thread, multi, process]
+tags:
+  [
+    thread,
+    multi-threading,
+    process,
+    processor,
+    cpu,
+    multi-process,
+    pcb,
+    context-switching,
+  ]
 mermaid: true
 use_math: true
 ---
@@ -30,12 +40,16 @@ use_math: true
 
 #### 프로세스
 
-- 독립된 메모리 영역을 할당 받음
+- 컴퓨터에서 실행되고 있는 프로그램
+- Code, Data, Stack, Heap으로 구성된 독립된 메모리 영역을 할당 받음
 - 1개 이상의 스레드를 가지고 있음
 
 #### 스레드
 
 - 프로세스가 할당받은 자원을 이용하는 실행의 단위
+- 스레드끼리 프로세스의 메모리를 공유하며 작동할 수 있음
+- 프로세스 메모리 영역 내에서 Code, Data, Heap 형식으로 할당된 메모리 영역은 공유함
+- Stack, PC register 형식으로 할당된 메모리 영역은 스레드 별로 따로 할당받음
 
 ---
 
@@ -51,6 +65,30 @@ use_math: true
 
 - PC 값은 스레드가 명령어의 어디까지 수행하였는지 나타냄
 - 스레드는 CPU를 할당 받았다가 스케줄러에 의해 다시 선점되므로, 어느 부분까지 수행했는지 기억해야 함
+
+---
+
+### PCB(Process Control Block)
+
+- 프로세스 제어 블록
+- 특정 프로세스에 대한 중요한 정보를 저장하고 있는 운영체제의 자료구조
+- 프로세스가 생성되면 운영체제는 해당 프로세스의 PCB를 생성함
+- 프로세스 작업 중 프로세스 간 전환이 발생하면, 진행하던 작업 상황을 PCB에 저장하고 CPU를 반환함
+- 이후 다시 CPU를 할당받을 때 PCB에 저장된 내용을 불러와 이전에 종료한 시점부터 다시 작업을 진행함
+- 아래와 같은 정보들이 저장됨
+  - Process State(프로세스 상태): new, ready, running 등 프로세스의 상태 정보
+  - Process ID(프로세스 ID): 프로세스 ID, 해당 프로세스의 자식 프로세스 ID
+  - Process priority(프로세스 권한): 컴퓨터 자원 또는 I/O 디바이스에 대한 권한 정보
+  - Program counter(프로그램 카운터): 프로세스에서 실행해야 할 다음 명령어의 주소에 대한 포인터
+  - CPU register(CPU 레지스터): 프로세스를 실행하기 위해 저장해야 할 레지스터에 대한 정보
+
+---
+
+### Context Switching(문맥 교환)
+
+- PCB를 교환하는 과정
+- 프로세스에 할당된 시간이 끝나거나 인터럽트에 의해 발생함
+- 사용자 입장에서는 컴퓨터가 동시에 여러 프로그램을 실행하는 것처럼 보이지만, 프로세스 간 context switching을 통해 실행되는 프로세스를 전환하는 것
 
 ---
 
