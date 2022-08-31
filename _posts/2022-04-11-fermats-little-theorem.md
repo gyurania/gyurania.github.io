@@ -7,8 +7,6 @@ theorem]     # TAG names should always be lowercase
 use_math: true
 ---
 
-## Fermat's little theorem
-
 ### 합동식
 
 대수학에서 합동식이란 숫자의 실제 크기를 불문하고, 어떤 수로 나누었을 때 나머지가 같은 수를 의미합니다.
